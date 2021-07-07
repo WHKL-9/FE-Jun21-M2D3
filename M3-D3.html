@@ -21,20 +21,8 @@
         In thins page you will add destinations of places you're dreaming to go to in the near future!
 
 
-        Ex 1) Implement a navigation bar. Connected to all the sections of the page to the menu items. 
-        Ex 2) Add a logo into the navigation bar (can be any image)
-        Ex 3) Add a Jumbotron section with the name and the claim of the tour operator agency
-        Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
-         In this section you should have:
-            - 4 destinations per row when the screen is very large
-            - 3 destinations per row when you are on a tablet (or a smaller window)
-            - 2 destinations per row when you are on a small screen
+        
 
-        Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
-            In this section you should have:
-                - 6 destinations per row when the screen is very large
-                - 3 destinations per row when you are on a tablet (or a smaller window)
-                - 2 destinations per row when you are on a small screen
         
         Ex 6) Implement a "Deal of the day" section. In this section you'll have:
             - 66% of the page with a picture of the destination
@@ -53,8 +41,205 @@
         Ex 15) Create a function that adds a "HOT" badge to all the "Welcome Summer" offers
         Ex 16) Create a function to delete all "cards" from the page
       -->
-</head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <style>
+          img{
+              width: 50px;
+              height: 50px;
+          }
+      </style>
+    </head>
 
-<body></body>
+<body>
+    <!-- Ex 1) Implement a navigation bar. Connected to all the sections of the page to the menu items.  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand" href="#">   <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" 
+            alt="random image from unsplash" class="img-fluid" ></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+       
+        </div>
+      </nav>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Flyjet Travels</h1>
+          <p class="lead">We fly around the world. Starting with where you are at.</p>
+        </div>
+      </div>  
+
+    <div class="container">
+        
+        <h2 class="text-center p-5">Deal of the Week</h2>
+        
+        <div class="row">
+              <!-- Ex 3) Add a Jumbotron section with the name and the claim of the tour operator agency
+        Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
+         In this section you should have:
+            - 4 destinations per row when the screen is very large
+            - 3 destinations per row when you are on a tablet (or a smaller window)
+            - 2 destinations per row when you are on a small screen  -->
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div>
+            <div class="col-6 col-md-4 col-xl-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div>
+      </div>  
+    </div>   
+    
+<!--     
+    Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
+    In this section you should have:
+        - 6 destinations per row when the screen is very large
+        - 3 destinations per row when you are on a tablet (or a smaller window)
+        - 2 destinations per row when you are on a small screen -->
+    <div class="container">
+        <h2 class="text-center p-5">Welcome Summer</h2>
+        <div class="row">
+            <div class="col-6 col-md-4 col-xl-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div><div class="col-6 col-md-4 col-xl-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div><div class="col-6 col-md-4 col-xl-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div><div class="col-6 col-md-4 col-xl-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div><div class="col-6 col-md-4 col-xl-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div><div class="col-6 col-md-4 col-xl-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div>
+            <div class="col-6 col-md-4 col-xl-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div>
+            <div class="col-6 col-md-4 col-xl-2">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588066077857-70494c21533c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBjb3ZlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Artist</a>
+                        </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+      
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
 
 </html>
